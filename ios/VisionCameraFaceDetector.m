@@ -2,10 +2,7 @@
 #import <VisionCamera/FrameProcessorPlugin.h>
 #import <VisionCamera/FrameProcessorPluginRegistry.h>
 
-#import "VisionCameraFaceDetector.h"
+#import "VisionCameraFaceDetector-Swift.h"
 
-@interface VISION_EXPORT_SWIFT_FRAME_PROCESSOR(scanFaces, VisionCameraFaceDetector)
-@end
-
-
-
+// // Example for a Swift Frame Processor plugin automatic registration
+VISION_EXPORT_SWIFT_FRAME_PROCESSOR(VisionCameraFaceDetector, scanFaces)
