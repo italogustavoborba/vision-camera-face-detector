@@ -131,3 +131,4 @@ public class VisionCameraFaceDetector: NSObject, FrameProcessorPlugin {
         return faceAttributes
     }
 }
+#endif
