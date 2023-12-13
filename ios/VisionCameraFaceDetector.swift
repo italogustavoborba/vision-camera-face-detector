@@ -1,4 +1,5 @@
-import Vision
+#if VISION_CAMERA_ENABLE_FRAME_PROCESSORS
+import VisionCamera
 import MLKitFaceDetection
 import MLKitVision
 import CoreML
@@ -7,7 +8,7 @@ import UIKit
 import AVFoundation
 
 @objc(VisionCameraFaceDetector)
-public class VisionCameraFaceDetector: NSObject, FrameProcessorPluginBase {
+public class VisionCameraFaceDetector: NSObject, FrameProcessorPlugin {
     static var FaceDetectorOption: FaceDetectorOptions = {
         let option = FaceDetectorOptions()
         option.contourMode = .all
